@@ -9,6 +9,7 @@ const App = () => {
     <div className="container">
       <h1>React State Management</h1>
       <div className="counter-box">
+      <h2>Parent Component</h2>
         <p>Count: <span>{count}</span></p>
         <button onClick={() => setCount(count + 1)}>Increment Count</button>
       </div>
@@ -20,7 +21,7 @@ const App = () => {
 const Child = ({ user, setUser }) => {
   return (
     <div className="child-box">
-      <h2>User Info</h2>
+      <h3>Child Component</h3>
       <p><strong>Name:</strong> {user.name}</p>
       <p><strong>Age:</strong> {user.age}</p>
       <GrandChild setUser={setUser} />
@@ -31,6 +32,7 @@ const Child = ({ user, setUser }) => {
 const GrandChild = ({ setUser }) => {
   return (
     <div className="grandchild-box">
+      <h4>Grand child Component</h4>
       <button onClick={() => setUser((prev) => ({ ...prev, age: prev.age + 1 }))}>
         Increment Age
       </button>
