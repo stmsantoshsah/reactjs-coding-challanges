@@ -147,9 +147,6 @@
 
 /* Responsive Design */
 @media (max-width: 600px) {
-  .timer_wrapper {
-    flex-direction: column;
-  }
   
   .show-timer {
     font-size: 2rem;
