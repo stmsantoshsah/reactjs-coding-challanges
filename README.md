@@ -5,8 +5,8 @@ A collection of React.js machine coding challenges to improve problem-solving an
 
 | Project Name     | Description                                      | Live Demo |
 |-----------------|--------------------------------------------------|-----------|
-| Countdown Timer | A simple countdown timer with start, pause, and reset functionality. | [View Demo](https://reactjs-coding-challanges.vercel.app/) |
-| Weather App     | Fetches and displays real-time weather data based on user input. | [View Demo](https://your-vercel-link.com) |
+| Countdown Timer | A simple countdown timer with start, pause, and reset functionality. | <a href="https://reactjs-coding-challanges.vercel.app/" target="_blank">View Demo</a> |
+| Weather App     | Fetches and displays real-time weather data based on user input. | <a href="https://your-vercel-link.com" target="_blank">View Demo</a> |
 
 > 🚀 More projects coming soon!
 
