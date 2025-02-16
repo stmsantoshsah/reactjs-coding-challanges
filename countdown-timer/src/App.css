@@ -1,32 +1,161 @@
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
+/* Countdown Wrapper */
 .countdown-wrapper {
-  max-width: 600px;
-  margin: 60px auto;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
   text-align: center;
-  h2{
-    margin-bottom: 40px;
-    font-size: 50px;
-  }
-  input{
-    max-width: 80px;
-    height: 40px;
-    text-align: center;
-    padding:10px;
-  }
+}
+
+/* Heading */
+.countdown-wrapper h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Timer Input Wrapper */
+.timer_wrapper {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Input Fields */
+.timer_wrapper input {
+  width: 80px;
+  padding: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.timer_wrapper input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.timer_wrapper input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Start Button */
+.timer_wrapper button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #ff6b6b;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.timer_wrapper button:hover {
+  background: #ff4757;
+  box-shadow: 0 0 10px rgba(255, 107, 107, 0.7);
+}
+
+/* Timer Display */
+.timer-wrapper {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
 .show-timer {
   display: flex;
-  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  gap: 10px;
+}
 
-  >div {
-    display: flex;
-    font-size: 50px;
+.show-timer div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.show-timer span {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Action Buttons */
+.action-btn {
+  display: flex;
+  gap: 10px;
+}
+
+.action-btn button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.action-btn button:nth-child(1) {
+  background: #ff9f43;
+  color: white;
+}
+
+.action-btn button:nth-child(1):hover {
+  background: #ff851b;
+}
+
+.action-btn button:nth-child(2) {
+  background: #2ed573;
+  color: white;
+}
+
+.action-btn button:nth-child(2):hover {
+  background: #1e9f4f;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .timer_wrapper {
+    flex-direction: column;
+  }
+  
+  .show-timer {
+    font-size: 2rem;
+  }
+
+  .timer_wrapper input {
+    width: 50px;
   }
 }
