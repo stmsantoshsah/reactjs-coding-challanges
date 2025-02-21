@@ -10,6 +10,7 @@ A collection of React.js machine coding challenges to improve problem-solving an
 | Nested Component State  | Demonstrates prop drilling and state management in deeply nested components. | <a href="https://reactjs-coding-challanges-xmcl.vercel.app/" target="_blank">View Demo</a> |
 | FAQ Accordion          | A modern FAQ accordion with smooth animations and interactive UI.           | <a href="https://reactjs-coding-challanges-knp5.vercel.app/" target="_blank">View Demo</a> |
 | EMI Calculator         | A tool to calculate monthly EMI based on loan amount, interest rate, and tenure. | <a href="https://reactjs-coding-challanges-nqgi.vercel.app/" target="_blank">View Demo</a> |
+| Custom Modal Overlay   | A reusable and customizable modal component with smooth animations.         | <a href="https://reactjs-coding-challanges-wx8b.vercel.app/" target="_blank">View Demo</a> |
 
 > 🚀 More projects coming soon!
 
